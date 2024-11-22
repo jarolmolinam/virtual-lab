@@ -4,7 +4,11 @@ import time
 from pathlib import Path
 from typing import Literal
 
-from openai import OpenAI
+import google.generativeai as genai
+import os
+# Esta es la clave de la api, esto se debe borrar o tener cuidado ccuando se sincronce
+genai.configure(api_key="AIzaSyChzaezgR2FO90JB4id1320449Og9yD9t0")
+#from openai import OpenAI
 from tqdm import trange, tqdm
 
 from virtual_lab.agent import Agent
